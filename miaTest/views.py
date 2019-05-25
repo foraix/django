@@ -7,6 +7,10 @@ def index(request):
     return render(request, 'index.html')
 
 
+def echart(request):
+    return render(request, 'echart.html')
+
+
 # 创建url对应的函数映射
 def login(request):
     msg = ''
