@@ -8,7 +8,12 @@ def index(request):
 
 
 def echart(request):
-    return render(request, 'echart.html')
+    # x轴需要的信息
+    listx = ["java", "嵌入式", "前端"]
+    # y轴需要的信息
+    listy = [300, 200, 100]
+
+    return render(request, "echart.html", {"listx": listx, "listy": listy})
 
 
 # 创建url对应的函数映射
